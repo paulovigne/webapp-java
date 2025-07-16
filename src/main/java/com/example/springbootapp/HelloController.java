@@ -61,7 +61,7 @@ public class HelloController {
     }
 
     @GetMapping("/healthz")
-    public String hello() {
-        return "{status: ok}";
+    public String probe() {
+        return "{\"status\": \"ok\"}";
     }
 }
