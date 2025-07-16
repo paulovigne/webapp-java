@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
         - image: webapp:v1
-          imagePullPolicy: Never
+          imagePullPolicy: Always
           name: webapp
           envFrom:
           - configMapRef:
