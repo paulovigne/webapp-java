@@ -20,7 +20,7 @@ spec:
         app: webapp
     spec:
       containers:
-        - image: webapp:v1
+        - image: ghcr.io/paulovigne/webapp-java:main
           imagePullPolicy: Always
           name: webapp
           envFrom:
