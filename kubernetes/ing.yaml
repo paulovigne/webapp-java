@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webapp
+  labels:
+    app: webapp    
+spec:
+  rules:
+  - host: webapp.172.19.15.212.sslip.io
+    http:
+      paths:
+      - backend:
+          service:
+            name: webapp
+            port:
+              number: 8080
+        path: /
+        pathType: Prefix
+  tls:
+  - hosts:
+      - webapp.172.19.15.212.sslip.io
