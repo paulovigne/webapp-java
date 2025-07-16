@@ -6,7 +6,7 @@ metadata:
     app: webapp    
 spec:
   rules:
-  - host: webapp.172.19.15.212.sslip.io
+  - host: webapp.LB-IP-ADDR.sslip.io
     http:
       paths:
       - backend:
@@ -18,4 +18,4 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-      - webapp.172.19.15.212.sslip.io
+      - webapp.LB-IP-ADDR.sslip.io
