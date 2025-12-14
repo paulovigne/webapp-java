@@ -1,4 +1,4 @@
-defaultNamespace: webapp-dev
+defaultNamespace: dev-webapp
 
 helm:
   disablePreProcess: true
