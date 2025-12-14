@@ -3,6 +3,9 @@ kind: Kustomization
 
 namespace: dev-webapp
 
+resources:
+  - .
+
 images:
   - name: webapp
     newTag: main
