@@ -1,0 +1,7 @@
+defaultNamespace: webapp-dev
+
+helm:
+  disablePreProcess: true
+
+kustomize:
+  dir: ../../env/dev

@@ -1,0 +1,7 @@
+defaultNamespace: webapp-prd
+
+helm:
+  disablePreProcess: true
+
+kustomize:
+  dir: ../../env/prd
