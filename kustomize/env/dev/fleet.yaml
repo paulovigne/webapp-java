@@ -4,4 +4,4 @@ helm:
   disablePreProcess: true
 
 kustomize:
-  dir: ../../env/dev
+  dir: .
