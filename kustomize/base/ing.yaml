@@ -6,7 +6,7 @@ metadata:
     app: webapp    
 spec:
   rules:
-  - host: webapp.LB-IP-ADDR.sslip.io
+  - host: webapp.sslip.io
     http:
       paths:
       - backend:

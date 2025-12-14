@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: dev-webapp
 
 resources:
-  - ../../base
+  - base
 
 images:
   - name: webapp
