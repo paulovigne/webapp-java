@@ -1,7 +1,7 @@
-defaultNamespace: dev-webapp
+defaultNamespace: webapp-prd
 
 helm:
   disablePreProcess: true
 
 kustomize:
-  dir: .
+  dir: ../../env/dev
