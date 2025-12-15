@@ -1,0 +1,3 @@
+resources:
+  - env/dev
+  - env/prd
