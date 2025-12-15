@@ -4,8 +4,8 @@ kind: Kustomization
 namespace: prd-webapp
 
 resources:
-  - https://github.com/paulovigne/webapp-java.git//kustomize/base?ref=main
-
+  - ../../base
+  
 images:
   - name: webapp
     newTag: main
