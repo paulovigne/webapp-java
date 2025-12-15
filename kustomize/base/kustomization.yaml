@@ -4,4 +4,3 @@ resources:
   - ing.yaml
   - cm-properties.yaml
   - cm-env-vars.yaml
-  - hpa.yaml
