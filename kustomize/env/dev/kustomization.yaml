@@ -4,7 +4,7 @@ kind: Kustomization
 namespace: dev-webapp
 
 resources:
-  - base
+  - ./kustomize/base
 images:
   - name: webapp
     newTag: main
