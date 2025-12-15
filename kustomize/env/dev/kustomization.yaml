@@ -4,8 +4,7 @@ kind: Kustomization
 namespace: dev-webapp
 
 resources:
-  - https://github.com/paulovigne/webapp-java.git//kustomize/base?ref=main
-
+  - base
 images:
   - name: webapp
     newTag: main
