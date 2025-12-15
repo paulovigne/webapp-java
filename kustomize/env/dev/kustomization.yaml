@@ -3,7 +3,7 @@ kind: Kustomization
 
 namespace: dev-webapp
 
-resources:
+bases:
   - ../../base
   
 images:
