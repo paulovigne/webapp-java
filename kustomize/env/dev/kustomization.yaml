@@ -7,7 +7,18 @@ images:
   - name: webapp
     newTag: main
 
-patchesStrategicMerge:
-  - cm-env-vars-patch.yaml
-  - deploy-patch.yaml
-  - ing-patch.yaml
+patches:
+  - target:
+      kind: Deployment
+      name: webapp
+    path: deploy-patch.yaml
+
+  - target:
+      kind: ConfigMap
+      name: env-vars
+    path: cm-env-vars-patch.yaml
+
+  - target:
+      kind: Ingress
+      name: webapp
+    path: ing-patch.yaml
