@@ -10,7 +10,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa 2: imagem final minimalista
-FROM openjdk:17-alpine AS runtime
+FROM openjdk:17-ea-4 AS runtime
 
 ENV APPUSER springuser
 ENV UIDGID 1001
