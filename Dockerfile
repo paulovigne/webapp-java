@@ -1,5 +1,5 @@
 # Etapa 1: build com Maven
-FROM docker.io/maven:3.9.6 AS build
+FROM maven:3.9.6 AS build
 WORKDIR /app
 
 # Copia arquivos do projeto
@@ -10,7 +10,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa 2: imagem final minimalista
-FROM docker.io/openjdk:17-alpine AS runtime
+FROM openjdk:17-alpine AS runtime
 
 ENV APPUSER springuser
 ENV UIDGID 1001
